@@ -309,9 +309,9 @@ div:has(> .main-entityHeader-container) {
     background-color: var(--spice-highlight);
 }
 .x-entityImage-imageContainer,
-.main-card-imageContainer > div:first-child {
+/*.main-card-imageContainer > div:first-child {
     background-color: var(--card-color, var(--spice-border-inactive));
-}
+}*/
 .main-avatar-avatar {
     background-color: var(--spice-border-inactive) !important;
 }
@@ -849,7 +849,13 @@ button[data-testid="control-button-repeat"][aria-checked="mixed"]::after {
 
 /* Michael's edits */
 
-div:has( [data-testid="NPV_Panel_OpenDiv"]) {
+/* album art holder color */
+.zogFp9G1AEqb8AKOd5BO {
+    background-color:black!important;
+}
+
+/* fix NPV scrolling */
+div:has(>div>[data-testid="NPV_Panel_OpenDiv"]) {
     overflow-y: hidden!important;
 }
 
@@ -933,7 +939,30 @@ div[aria-rowcount="4"] > .main-rootlist-wrapper {
     display:block;
 }
 
+section[data-testid="artist-page"] .main-actionBar-ActionBar {
+    padding:0!important;
+}
+
 /* Removed items */
+
+/* playlist curation */
+div:has(>.playlist-playlist-playlistInlineCurationSection),
+
+/* playlist recommendations*/
+div[data-testid="recommended-track"],
+.playlist-playlist-seeMore,
+
+/* artist images on artist page */
+div.main-entityHeader-imageContainer,
+
+/* profile section top artists */
+section[aria-label="Top artists this month"],
+
+/* profile section recent artists */
+section[aria-label="Recently played artists"],
+
+/* profile section top tracks */
+section.DJCugGBTcU3io4Q28BHl:has(>div[aria-labelledby="listrow-title-top-tracks-this-month"]),
 
 /* now playing view sections */
 .main-nowPlayingView-section,
@@ -965,9 +994,6 @@ button:has([d="M12.156 7.65a1.5 1.5 0 00-1.432 1.948l-1.909.597a3.5 3.5 0 116.84
 /* report button */
 button:has([d="M7.246 9V4h1.5v5h-1.5zm0 3.025v-1.5h1.5v1.5h-1.5z"]),
 
-/* covers in sidebar */
-/* .HeaderSideArea, */
-
 /* artist avatars on album page */
 .main-entityHeader-creatorWrapper > .main-avatar-avatar,
 
@@ -994,9 +1020,6 @@ button:has( [d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 
 
 /* play buttons in search */
 .main-card-PlayButtonContainer,
-
-/* photos in search */
-/*.main-card-imageContainer,*/
 
 /* other buttons in playing bar */
 button[aria-label="Open Miniplayer"],
@@ -1038,8 +1061,9 @@ section[data-testid="artist-page"] > div > div > div > div.main-gridContainer-gr
 /* top bar on album page */
 [data-testid="topbar"],
 
-/* artist page actionBar */
-.main-actionBar-ActionBar,
+/* artist and album page actionBar */
+.main-actionBar-ActionBarRow,
+.main-entityHeader-backgroundColor,
 
 /* song radio right-click option */
 li:has( [d="M5.624 3.886A4.748 4.748 0 0 0 3.25 8c0 1.758.955 3.293 2.375 4.114l.75-1.3a3.249 3.249 0 0 1 0-5.63l-.75-1.298zm4.001 1.299.75-1.3A4.748 4.748 0 0 1 12.75 8a4.748 4.748 0 0 1-2.375 4.114l-.75-1.3a3.249 3.249 0 0 0 0-5.63zM8 6.545a1.455 1.455 0 1 0 0 2.91 1.455 1.455 0 0 0 0-2.91z"]),
