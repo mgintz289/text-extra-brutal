@@ -53,7 +53,7 @@
 
     --display-card-image: block; /* none | block */
     --display-coverart-image: none; /* none | block */
-    --display-header-image: none; /* none | block */
+    --display-header-image: block; /* none | block */
     --display-sidebar-image: block; /* none | block */
     --display-tracklist-image: none; /* none | block */
     --display-spicetify-banner-ascii: block; /* none | block */
@@ -483,7 +483,7 @@ form .main-topBar-searchBar:placeholder-shown {
     background-color: transparent;
 }
 .x-entityImage-imageContainer::before {
-    content: "░▒▒░";
+    content: "";
     color: var(--spice-subtext);
     transform: scale(1.4);
     position: absolute;
@@ -919,8 +919,21 @@ div[aria-rowcount="4"] > .main-rootlist-wrapper {
     padding: 20px 32px 12px;
 }
 
+/* spacing in Now playing bar */
+/* ul[aria-label="Now playing"] .Box__BoxComponent-sc-y4nds-0 {
+    display:block!important;
+} */
 
 /* Removed items */
+
+/* artist images in search bar */
+.x-entityImage-circle > img,
+
+/* play button over artist image in search bar */
+.ka4wGy_b04LNCthHIH1N,
+
+/* artist page background image */
+[data-testid="background-image"],
 
 /* experimental features button */
 button:has([d="M3725 9160 c-148 -4 -306 -10 -350 -14 -117 -11 -190 -49 -291 -150 -132 -133 -170 -234 -162 -431 7 -163 50 -255 185 -396 l64 -66 -10 -994 c-13 -1268 -15 -1302 -63 -1494 -87 -352 -263 -756 -511 -1172 -111 -186 -705 -1084 -1371 -2073 -537 -797 -585 -882 -607 -1090 -33 -317 39 -586 218 -810 114 -142 229 -235 386 -311 90 -43 116 -51 217 -65 209 -27 723 -33 2725 -33 2278 1 3098 9 3190 32 231 59 482 234 607 423 142 215 195 408 185 674 -9 241 -46 337 -240 634 -53 81 -97 156 -97 167 0 10 -6 19 -13 19 -19 0 -1264 1863 -1621 2424 -166 261 -361 668 -444 928 -42 129 -88 314 -107 428 -20 119 -34 783 -34 1683 l-1 629 80 91 c125 142 170 250 170 408 0 96 -16 162 -61 255 -74 152 -221 264 -371 284 -182 25 -1072 35 -1673 20z m1574 -388 c89 -20 141 -84 141 -172 0 -47 -5 -64 -30 -98 -16 -23 -38 -46 -50 -52 -45 -24 -311 -33 -985 -33 -764 0 -958 8 -1004 44 -42 33 -71 89 -71 138 0 56 34 127 69 145 30 16 151 35 256 40 159 7 1633 -3 1674 -12z m-116 -839 c11 -175 18 -570 27 -1378 9 -824 10 -825 70 -1066 81 -320 193 -597 398 -984 178 -337 326 -569 1065 -1663 186 -277 337 -505 335 -508 -3 -2 -1223 -3 -2712 -2 l-2707 3 82 120 c45 66 290 431 544 810 437 654 626 953 779 1233 229 416 404 893 445 1207 21 158 31 532 31 1175 0 360 3 766 7 902 l6 247 126 4 c69 1 435 4 812 5 l686 2 6 -107z"]),
@@ -944,7 +957,10 @@ button:has([d="M12.156 7.65a1.5 1.5 0 00-1.432 1.948l-1.909.597a3.5 3.5 0 116.84
 button:has([d="M7.246 9V4h1.5v5h-1.5zm0 3.025v-1.5h1.5v1.5h-1.5z"]),
 
 /* covers in sidebar */
-.HeaderSideArea,
+/* .HeaderSideArea, */
+
+/* artist avatars on album page */
+.main-entityHeader-creatorWrapper > .main-avatar-avatar,
 
 /* friend avatars in friends sidebar tab */
 li div:has(> .main-avatar-avatar),
@@ -964,8 +980,14 @@ div:has(> [aria-labelledby="listrow-title-on-tour"]),
 /* shuffle button in playing bar */
 button:has( [d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"]),
 
+/* artist images */
+.MxmW8QkHqHWtuhO589PV,
+
+/* play buttons in search */
+.main-card-PlayButtonContainer,
+
 /* photos in search */
-.main-card-imageContainer,
+/*.main-card-imageContainer,*/
 
 /* other buttons in playing bar */
 button[aria-label="Open Miniplayer"],
