@@ -581,6 +581,7 @@ form .main-topBar-searchBar:placeholder-shown {
 /* compact tracklists */
 .main-trackList-trackListRow {
     height: 32px;
+    padding:0!important;
 }
 .main-trackList-rowMainContent {
     grid-template: "title badges subtitle" / auto 1fr;
@@ -934,10 +935,10 @@ div[aria-rowcount="4"] > .main-rootlist-wrapper {
     display:block!important;
 } */
 
-/* spacing in search bar */
+/* spacing in search bar
 .Box-link-naked-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_32px {
     display:block;
-}
+}*/
 
 section[data-testid="artist-page"] .main-actionBar-ActionBar {
     padding:0!important;
@@ -967,8 +968,8 @@ section.DJCugGBTcU3io4Q28BHl:has(>div[aria-labelledby="listrow-title-top-tracks-
 /* now playing view sections */
 .main-nowPlayingView-section,
 
-/* images in search bar */
-div[aria-labelledby^="listrow-title-recent-searches-item-"] > .Areas__HeaderSideArea-sc-8gfrea-1,
+/* images in search bar
+div[aria-labelledby^="listrow-title-recent-searches-item-"] > .Areas__HeaderSideArea-sc-8gfrea-1, */
 
 /* artist page background image */
 [data-testid="background-image"],
@@ -1007,7 +1008,7 @@ li div:has(> .main-avatar-avatar),
 div:has(> [aria-labelledby="listrow-title-on-tour"]),
 
 /* browse button in search bar */
-.IconContainer-trailing,
+div>div>button[aria-label="Browse"],
 
 /* browse all in search */
 [aria-label="Browse all"],
@@ -1047,13 +1048,13 @@ section[aria-label="Merch"],
 section[data-testid="album-page"] section,
 
 /* popular div on artist page */
-section[data-testid="artist-page"] > div > div > div > div > div.main-gridContainer-gridContainer,
+section[data-test-uri^="spotify:artist"] > div > div > div > div > div.main-gridContainer-gridContainer,
 
 /* non-discography sections on artist page */
-section[data-testid="artist-page"] > div > div > div > section:not([aria-label="Discography"]),
+section[data-test-uri^="spotify:artist"] > div > div > div > section:not([aria-label="Discography"]),
 
 /* other non-discography divs on artist page */
-section[data-testid="artist-page"] > div > div > div > div.main-gridContainer-gridContainer,
+section[data-test-uri^="spotify:artist"] > div > div > div > div.main-gridContainer-gridContainer,
 
 /* artist pick on artist page */
 .cWcQITygrzZTduXuXope.BpBrwbAwIMryupCOXJzw,
@@ -1062,8 +1063,9 @@ section[data-testid="artist-page"] > div > div > div > div.main-gridContainer-gr
 [data-testid="topbar"],
 
 /* artist and album page actionBar */
-.main-actionBar-ActionBarRow,
+div:has(>div>div.main-actionBar-ActionBarRow),
 .main-entityHeader-backgroundColor,
+/*.ZjfaJlGQZ42nCWjD3FDm,
 
 /* song radio right-click option */
 li:has( [d="M5.624 3.886A4.748 4.748 0 0 0 3.25 8c0 1.758.955 3.293 2.375 4.114l.75-1.3a3.249 3.249 0 0 1 0-5.63l-.75-1.298zm4.001 1.299.75-1.3A4.748 4.748 0 0 1 12.75 8a4.748 4.748 0 0 1-2.375 4.114l-.75-1.3a3.249 3.249 0 0 0 0-5.63zM8 6.545a1.455 1.455 0 1 0 0 2.91 1.455 1.455 0 0 0 0-2.91z"]),
