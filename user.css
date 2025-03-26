@@ -55,7 +55,7 @@
     --display-coverart-image: none; /* none | block */
     --display-header-image: block; /* none | block */
     --display-sidebar-image: block; /* none | block */
-    --display-tracklist-image: none; /* none | block */
+    --display-tracklist-image: block; /* none | block */
     --display-spicetify-banner-ascii: block; /* none | block */
     --display-music-banner-ascii: none; /* none | block */
 
@@ -579,6 +579,7 @@ form .main-topBar-searchBar:placeholder-shown {
 }
 
 /* compact tracklists */
+/*
 .main-trackList-trackListRow {
     height: 32px;
     padding:0!important;
@@ -603,6 +604,7 @@ form .main-topBar-searchBar:placeholder-shown {
 .main-trackList-icon {
     top: unset;
 }
+*/
 
 /* lyrics page & sidebar */
 .lyrics-lyrics-background {
@@ -702,11 +704,11 @@ form .main-topBar-searchBar:placeholder-shown {
     border-radius: 0;
 }
 
-/* cover art */
+/* cover art 
 .main-nowPlayingWidget-coverArt .cover-art {
     height: 32px !important;
     width: 32px !important;
-}
+}*/
 
 /* left nowplaying text */
 .main-nowPlayingBar-left {
@@ -944,6 +946,26 @@ section[data-testid="artist-page"] .main-actionBar-ActionBar {
     padding:0!important;
 }
 
+/* photo on artist page */
+.XUwMufC5NCgIyRMyGXLD {
+    background-image:none!important;
+}
+
+/* ombre on artist page */
+.EmeHQXR87mUskYK6xEde {
+    isolation: unset;
+}
+
+/* discography top bar */
+.mxGhI8Lr7MoGOnFrbsUa {
+    top:0!important;
+}
+
+/* ombre on album page */
+.Bdcf5g__Rug3TGqSdbiy {
+    --background-base-70: var(--spice-main)!important;
+}
+
 /* Removed items */
 
 /* playlist curation */
@@ -971,8 +993,8 @@ section.DJCugGBTcU3io4Q28BHl:has(>div[aria-labelledby="listrow-title-top-tracks-
 /* images in search bar
 div[aria-labelledby^="listrow-title-recent-searches-item-"] > .Areas__HeaderSideArea-sc-8gfrea-1, */
 
-/* artist page background image */
-[data-testid="background-image"],
+/* artist page background image
+[data-testid="background-image"], */
 
 /* experimental features button */
 button:has([d="M3725 9160 c-148 -4 -306 -10 -350 -14 -117 -11 -190 -49 -291 -150 -132 -133 -170 -234 -162 -431 7 -163 50 -255 185 -396 l64 -66 -10 -994 c-13 -1268 -15 -1302 -63 -1494 -87 -352 -263 -756 -511 -1172 -111 -186 -705 -1084 -1371 -2073 -537 -797 -585 -882 -607 -1090 -33 -317 39 -586 218 -810 114 -142 229 -235 386 -311 90 -43 116 -51 217 -65 209 -27 723 -33 2725 -33 2278 1 3098 9 3190 32 231 59 482 234 607 423 142 215 195 408 185 674 -9 241 -46 337 -240 634 -53 81 -97 156 -97 167 0 10 -6 19 -13 19 -19 0 -1264 1863 -1621 2424 -166 261 -361 668 -444 928 -42 129 -88 314 -107 428 -20 119 -34 783 -34 1683 l-1 629 80 91 c125 142 170 250 170 408 0 96 -16 162 -61 255 -74 152 -221 264 -371 284 -182 25 -1072 35 -1673 20z m1574 -388 c89 -20 141 -84 141 -172 0 -47 -5 -64 -30 -98 -16 -23 -38 -46 -50 -52 -45 -24 -311 -33 -985 -33 -764 0 -958 8 -1004 44 -42 33 -71 89 -71 138 0 56 34 127 69 145 30 16 151 35 256 40 159 7 1633 -3 1674 -12z m-116 -839 c11 -175 18 -570 27 -1378 9 -824 10 -825 70 -1066 81 -320 193 -597 398 -984 178 -337 326 -569 1065 -1663 186 -277 337 -505 335 -508 -3 -2 -1223 -3 -2712 -2 l-2707 3 82 120 c45 66 290 431 544 810 437 654 626 953 779 1233 229 416 404 893 445 1207 21 158 31 532 31 1175 0 360 3 766 7 902 l6 247 126 4 c69 1 435 4 812 5 l686 2 6 -107z"]),
@@ -1008,7 +1030,10 @@ li div:has(> .main-avatar-avatar),
 div:has(> [aria-labelledby="listrow-title-on-tour"]),
 
 /* browse button in search bar */
-div>div>button[aria-label="Browse"],
+.BV0jjn_h5TtMMl8YKuZ0,
+
+/* weird down arrow in search */
+[aria-label="Change visible columns"],
 
 /* browse all in search */
 [aria-label="Browse all"],
@@ -1065,7 +1090,6 @@ section[data-test-uri^="spotify:artist"] > div > div > div > div.main-gridContai
 /* artist and album page actionBar */
 div:has(>div>div.main-actionBar-ActionBarRow),
 .main-entityHeader-backgroundColor,
-/*.ZjfaJlGQZ42nCWjD3FDm,
 
 /* song radio right-click option */
 li:has( [d="M5.624 3.886A4.748 4.748 0 0 0 3.25 8c0 1.758.955 3.293 2.375 4.114l.75-1.3a3.249 3.249 0 0 1 0-5.63l-.75-1.298zm4.001 1.299.75-1.3A4.748 4.748 0 0 1 12.75 8a4.748 4.748 0 0 1-2.375 4.114l-.75-1.3a3.249 3.249 0 0 0 0-5.63zM8 6.545a1.455 1.455 0 1 0 0 2.91 1.455 1.455 0 0 0 0-2.91z"]),
