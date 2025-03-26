@@ -976,7 +976,7 @@ div[data-testid="recommended-track"],
 .playlist-playlist-seeMore,
 
 /* artist images on artist page */
-div.main-entityHeader-imageContainer,
+div.main-entityHeader-imageContainer:has( .main-entityHeader-circle),
 
 /* profile section top artists */
 section[aria-label="Top artists this month"],
