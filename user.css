@@ -892,10 +892,10 @@ div:has(>div>[data-testid="NPV_Panel_OpenDiv"]) {
     grid-column: 1 / -1;
 }
 
-/* fixing song search results size */
+/* fixing song search results size
 div[aria-rowcount="4"] > .main-rootlist-wrapper {
     height:128px !important;
-}
+} */
 
 /* results heights in search */
 .main-shelf-shelf {
