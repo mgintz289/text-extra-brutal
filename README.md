@@ -7,3 +7,5 @@ This [Spicetify]([url](https://spicetify.app/)) theme removes some distractions 
   <li>bring it up to date</li>
   <li>implement more clear options depending on what the user does and does not want visible (their "level of brutality").</li>
 </ul>
+
+Pull requests will be reviewed.
